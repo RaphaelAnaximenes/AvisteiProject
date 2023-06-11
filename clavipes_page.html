@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="styles/scrollbar.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="src/assets/img/logo.png">
+    <title>Avistei - T. clavipes</title>
+</head>
+
+<body style="background-image: url('src/assets/img/topside.png'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; position: relative;">
+    <div id="app"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.9"></script>
+    <script>
+        new Vue({
+            el: '#app',
+        template: `
+
+        <div class="container">
+
+            <!-- Navbar -->
+<div style="padding-bottom: 5%;">
+ <nav class="d-flex align-items-center justify-content">
+     <img src="src/assets/img/logo.png" class="logo">
+     
+     <a href="animals.html" class="d-flex flex-column align-items-center">
+         <img src="src/assets/img/fav/favicon-animals.png" style="max-width: 20%;">
+         <span>Animais</span>
+     </a>
+     
+     <a href="about.html" class="d-flex flex-column align-items-center">
+         <img src="src/assets/img/fav/favicon-projeto.png" style="max-width: 20%;">
+         <span>Projeto</span>
+     </a>
+     
+     <a href="health.html" class="d-flex flex-column align-items-center">
+         <img src="src/assets/img/fav/favicon-saude.png" style="max-width: 20%;">
+         <span>Saúde</span>
+     </a>
+ </nav> 
+</div>
+
+
+
+<div class="row">
+
+<!-- Buttons / Content -->
+ <div class="col-sm-5">
+   <div class="text-container">
+     <h3>Aranha-do-fio-de-Ouro<i>(Trichonephila clavipes)</i></h3>
+     <p>
+       Suas teias de tom amarelo claro, refletem a luz do sol chegando a um tom dourado, e podem chegar a um metro de diâmetro. Esses “fios de ouro” são tão fortes que, proporcionalmente, chegam ter tanta resistência quanto o aço. Possuem veneno, mas, é inofensivo aos humanos. Se alimentam de qualquer presa que seja sustentada por sua teia. Não são agressivas e são ótimas aliadas no controle de insetos indesejados.
+     </p>
+<p>
+ <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+   Sobre o animal
+ </button>
+ <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample2" aria-expanded="false" aria-controls="collapseWidthExample2">
+   Sofri um acidente
+ </button>
+</p>
+
+
+<div style="min-height: 120px;">
+ 
+ <div class="collapse collapse-horizontal" id="collapseWidthExample">
+   <div class="card card-body-lg" style="max-width: 600px; width: 600px;word-break: break-word;">
+<ul>
+ <li>Trichonephila clavipes</li>
+ <li>As fêmeas podem atingir cerca de 20 a 30 mm de comprimento corporal</li>
+ <li>A diferença de tamanho entre machos e fêmeas é uma característica marcante nessa espécie</li>
+ <li>As fêmeas adultas da Trichonephila clavipes possuem um corpo predominantemente preto com marcas distintas</li>
+ <li>Essas aranhas constroem teias grandes e complexas, geralmente em formato de espiral</li>
+ <li>Durante o acasalamento, o macho se aproxima da fêmea com cautela para evitar ser confundido com uma presa</li>
+ <li>A Trichonephila clavipes possui veneno, como a maioria das aranhas. No entanto, sua picada não é considerada perigosa para os seres humanos</li>
+ <li> Essas aranhas são encontradas em habitats naturais, como florestas tropicais e áreas com vegetação densa.</li>
+ <li>A  Trichonephila clavipes desempenha um papel importante no controle de populações de insetos, ajudando a regular o equilíbrio do ecossistema.</li>
+</ul>
+   </div>
+ </div>
+
+ <div class="collapse collapse-horizontal" id="collapseWidthExample2">
+   <div class="card card-body-lg" style="max-width: 600px; width: 600px;word-break: break-word;">
+<ol>
+ <li>Mantenha a calma</li>
+ <li>Lave a área afetada</li>
+ <li>Aplique gelo</li>
+ <li>Não coce</li>
+ <li>Utilize analgésicos tópicos:</li>
+ <li>Observe os sintomas</li>
+ <li>Consulte um médico</li>
+ <li>Informe sobre a picada</li>
+ <li>Medidas preventivas</li>
+ <li>Aranha sem interesse médico</li>
+</ol>
+   </div>
+ </div>
+
+</div>
+
+<div style="min-height: 120px; overflow-x: visible;">
+ 
+</div>
+
+
+
+
+   </div>
+ </div>
+
+<!-- Hero Animal --> 
+<div class="col-sm-5">
+ <div class="image-container">
+   <img src="src/assets/img/animals/ouro.jpg" alt="Imagem" class="img-fluid rounded-circle animal">
+ </div>
+</div>
+
+</div>
+
+<br>
+<!-- Comments -->
+       <h1>Você avistou um desses? Conte-nos!</h1>
+               <hr/>
+               
+               <div class="form-todo form-group">
+                   <p>
+                       <input type="text" name="author" placeholder="nome" class="form-control-lg" v-model="name">
+                   </p>
+                   <p>
+                       <textarea name="message" placeholder="comentário" class="form-control-lg" v-model="message"></textarea>
+                   </p>
+                   
+                   <button v-on:click="addComment" type="submit" class="btn btn-success" style="-webkit-box-shadow: 3px 3px 5px 5px #000000; box-shadow: 5px 5px 15px 5px #000000;">Comentar</button>
+               </div>
+               <br>
+               
+               <div class="list-group">
+                   <div class="list-group-item" v-for="(comment, index) in allComments">
+                       <span class="comment__author">Autor: <strong>{{ comment.name }}</strong></span>
+                       <p>{{ comment.message }}</p>
+                       <div>
+                           <p><a href="#" title="Excluir" v-on:click.prevent="deleteComment(index)">Excluir</a></p>
+                       </div>
+                   </div>
+               </div>
+               
+               <hr/>
+</div>       `,
+        data() {
+            return {
+                comments: [],
+                name:'', message: '',
+            }
+        },
+        methods: {
+            addComment() {
+                if(this.message.trim() === ''){return;}
+                this.comments.push({name: this.name, message:this.message});
+                this.name ='';
+                this.message = '';
+            },
+
+            deleteComment(index) {this.comments.splice(index, 1)},
+            getImage() {return 'trip.jpg'}
+            
+        },
+        computed:{
+            allComments(){
+                return this.comments.map(comment => ({
+                  ...comment,
+                   name: comment.name.trim() === '' ? 'Anônimo' : comment.name
+                }))
+            }
+        },
+        watch:{
+            comments(val) {
+                console.log('val', val);
+            }
+        }
+    });
+</script>
+
+    </body>
+</html>
+

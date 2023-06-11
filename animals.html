@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="styles/scrollbar.css">
+    <link rel="stylesheet" href="styles/highlight.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="src/assets/img/logo.png">
+    <title>Avistei - Lista de animais</title>
+</head>
+
+<body style="background-image: url('src/assets/img/topside.png'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; position: relative;">
+    <div id="app"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.9"></script>
+    <script>
+        new Vue({
+            el: '#app',
+        template: `
+
+<div class="container">
+
+<!-- Navbar -->
+<div style="padding-bottom: 5%;">
+ <nav class="d-flex align-items-center justify-content">
+     <img src="src/assets/img/logo.png" class="logo">
+     
+     <a href="animals.html" class="d-flex flex-column align-items-center">
+         <img src="src/assets/img/fav/favicon-animals.png" style="max-width: 20%;">
+         <span>Animais</span>
+     </a>
+     
+     <a href="about.html" class="d-flex flex-column align-items-center">
+         <img src="src/assets/img/fav/favicon-projeto.png" style="max-width: 20%;">
+         <span>Projeto</span>
+     </a>
+     
+     <a href="health.html" class="d-flex flex-column align-items-center">
+         <img src="src/assets/img/fav/favicon-saude.png" style="max-width: 20%;">
+         <span>Saúde</span>
+     </a>
+ </nav> 
+</div>
+
+
+<div style="min-height: 70px;"></div>
+<div class="row">
+
+    
+    <div class="text-container">
+      <center><h1> Animais já cadastrados no  <strong class="highlight-animation">Avistei BIO</strong></h1></center>
+      <br>
+      <h4>
+        Lista <strong>Avistei</strong> de <strong>animais cadastrados </strong> - Obtenha informações sobre animais peçonhentos e venenosos de forma objetiva e de cunho educacional:
+      </h4>
+      <br/>
+      <h4>
+       <i> "Por motivos de segurança e bem-estar, é altamente recomendado evitar o contato com animais selvagens. Interagir com essas criaturas pode ser perigoso, tanto para nós quanto para eles. Respeite a vida selvagem e admire sua beleza à distância, seja observando-os em seu habitat natural, visitando santuários ou participando de atividades ecoturísticas responsáveis. Ao agir com prudência, contribuímos para a conservação e preservação dessas espécies incríveis."</i>  
+       <hr><i> <strong>Nota: </strong> Nenhum animal silvestre foi maltratado, manipulado ou morto. Aprendemos a respeita-los pois o meio ambiente é <strong>deles</strong>, é nosso!</i> <hr>
+      </h4>
+
+</div>
+
+
+
+<!-- Spacing -->
+
+
+<div style="min-height: 150px;">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <a href="aedes_page.html">
+          <img src="src/assets/img/animals/Dengue.jpg" class="card-img-top" alt="Image 1"></a>
+          <div class="card-body">
+            <h5 class="card-title">Aedes Aegypti</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <a href="argentata_page.html">
+          <img src="src/assets/img/animals/prata.jpg" class="card-img-top" alt="Image 2"></a>
+          <div class="card-body">
+            <h5 class="card-title">Argiope argentata</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <a href="bahiensis_page.html">
+          <img src="src/assets/img/animals/escorpsmarrom.jpg" class="card-img-top" alt="Image 3"></a>
+          <div class="card-body">
+            <h5 class="card-title">Tityus bahiensis</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <a href="boa_page.html">
+          <img src="src/assets/img/animals/jiboia.jpg" class="card-img-top" alt="Image 4"></a>
+          <div class="card-body">
+            <h5 class="card-title">Boa constrictor</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <a href="bothrops_page.html">
+          <img src="src/assets/img/animals/jararaca.jpg" class="card-img-top" alt="Image 5"></a>
+          <div class="card-body">
+            <h5 class="card-title">Bothrops jararaca</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <a href="cerrulatus_page.html">
+          <img src="src/assets/img/animals/escorpsamarelo.jpg" class="card-img-top" alt="Image 6"></a>
+          <div class="card-body">
+            <h5 class="card-title">Tityus serrulatus</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <a href="clavipes_page.html">
+          <img src="src/assets/img/animals/ouro.jpg" class="card-img-top" alt="Image 7"></a>
+          <div class="card-body">
+            <h5 class="card-title">Trichonephila clavipes</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <a href="crotalus_page.html">
+          <img src="src/assets/img/animals/cascavel.jpg" class="card-img-top" alt="Image 8"></a>
+          <div class="card-body">
+            <h5 class="card-title">Crotalus durissus</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <a href="infestans_page.html">
+          <img src="src/assets/img/animals/barbeiro.jpg" class="card-img-top" alt="Image 9"></a>
+          <div class="card-body">
+            <h5 class="card-title">Triatoma infestans</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <a href="lampropeltis_page.html">
+          <img src="src/assets/img/animals/coral-falsa.jpg" class="card-img-top" alt="Image 10"></a>
+          <div class="card-body">
+            <h5 class="card-title">Lampropeltis triangulum</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <a href="loxoceles_page.html">
+          <img src="src/assets/img/animals/fofinha.jpg" class="card-img-top" alt="Image 11"></a>
+          <div class="card-body">
+            <h5 class="card-title">Loxosceles</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <a href="lutzomyia_page.html">
+          <img src="src/assets/img/animals/mosquitopalha.jpg" class="card-img-top" alt="Image 12"></a>
+          <div class="card-body">
+            <h5 class="card-title">Lutzomyia longipalpis</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <a href="micrurus_page.html">
+          <img src="src/assets/img/animals/coralverdadeira.jpg" class="card-img-top" alt="Image 13"></a>
+          <div class="card-body">
+            <h5 class="card-title">Micrurus altirostris</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <a href="nephilingis_page.html">
+          <img src="src/assets/img/animals/mariabola.jpeg" class="card-img-top" alt="Image 14"></a>
+          <div class="card-body">
+            <h5 class="card-title">Nephilengis cruentata</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <a href="phoneutria_page.html">
+          <img src="src/assets/img/animals/armadeira.jpg" class="card-img-top" alt="Image 15"></a>
+          <div class="card-body">
+            <h5 class="card-title">Phoneutria</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<br><br><br><br>
+`,
+        data() {
+            return {
+                
+            }
+        },
+        methods: {
+            
+        },
+        computed:{
+            
+        },
+       
+        }
+    );
+</script>
+
+    </body>
+</html>
+

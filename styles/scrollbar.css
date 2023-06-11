@@ -1,0 +1,21 @@
+/* Estilizando o botão de rolagem */
+::-webkit-scrollbar {
+    width: 12px;
+    }
+  
+  /* Estilizando a trilha do botão de rolagem */
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Cor de fundo da trilha */
+  }
+  
+  /* Estilizando o indicador do botão de rolagem */
+  ::-webkit-scrollbar-thumb {
+    background-color: #6FA560; /* Cor do botão de rolagem */
+  }
+  
+  /* Estilizando o botão de rolagem quando estiver hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #426442; /* Cor do botão de rolagem em hover */
+  }
+
+  

@@ -1,0 +1,43 @@
+.highlight-animation {
+    display: inline-block;
+    animation: highlight 2s infinite;
+  }
+
+  @keyframes highlight {
+    0% {
+      color: #b1f1ce;
+      background-color: transparent;
+    }
+
+    50% {
+      color: #255811;
+      background-color: #ffffff;
+    }
+
+    100% {
+      color: #b1f1ce;
+      background-color: transparent;
+    }
+}
+
+.highlight-animation2 {
+  display: inline-block;
+  animation: highlight2 5s infinite;
+}
+
+@keyframes highlight2 {
+  0% {
+    color: #df1414;
+    background-color: transparent;
+  }
+
+  50% {
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  100% {
+    color: #be2727;
+    background-color: transparent;
+  }
+}

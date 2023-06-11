@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="styles/scrollbar.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="src/assets/img/logo.png">
+    <title>Avistei - Aedes Aegipty</title>
+</head>
+
+<body style="background-image: url('src/assets/img/topside.png'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; position: relative;">
+    <div id="app"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.9"></script>
+    <script>
+        new Vue({
+            el: '#app',
+        template: `
+        <div class="container">
+
+            <!-- Navbar -->
+<div style="padding-bottom: 5%;">
+ <nav class="d-flex align-items-center justify-content">
+     <img src="src/assets/img/logo.png" class="logo">
+     
+     <a href="animals.html" class="d-flex flex-column align-items-center">
+         <img src="src/assets/img/fav/favicon-animals.png" style="max-width: 20%;">
+         <span>Animais</span>
+     </a>
+     
+     <a href="about.html" class="d-flex flex-column align-items-center">
+         <img src="src/assets/img/fav/favicon-projeto.png" style="max-width: 20%;">
+         <span>Projeto</span>
+     </a>
+     
+     <a href="health.html" class="d-flex flex-column align-items-center">
+         <img src="src/assets/img/fav/favicon-saude.png" style="max-width: 20%;">
+         <span>Saúde</span>
+     </a>
+ </nav> 
+</div>
+
+
+
+<div class="row">
+
+<!-- Buttons / Content -->
+ <div class="col-sm-5">
+   <div class="text-container">
+     <h3>Mosquito da Dengue <i>(Aedes Aegypti)</i></h3>
+     <p>
+       Aedes aegypti  é o mosquito transmissor da dengue e da febre amarela urbana. Menor do que os mosquitos comuns, é preto com listras brancas no tronco, na cabeça e nas pernas. Suas asas são translúcidas e o ruído que produzem é praticamente inaudível ao ser humano.
+     </p>
+<p>
+ <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+   Sobre o animal
+ </button>
+ <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample2" aria-expanded="false" aria-controls="collapseWidthExample2">
+   Sofri um acidente
+ </button>
+</p>
+
+
+<div style="min-height: 120px;">
+ 
+ <div class="collapse collapse-horizontal" id="collapseWidthExample">
+   <div class="card card-body-lg" style="max-width: 600px; width: 600px;word-break: break-word;">
+<ul>
+ <li>Aedes Aegypti</li>
+ <li>Aedes aegypti possui um corpo escuro, geralmente preto ou marrom, com listras brancas</li>
+ <li>Asas e pernas são longas em comparação com o tamanho do corpo</li>
+ <li>Ao contrário de muitos outros mosquitos, o Aedes aegypti é principalmente ativo durante o dia</li>
+ <li>Esses mosquitos têm uma forte preferência por áreas urbanas</li>
+ <li>As fêmeas do mosquito depositam seus ovos em recipientes com água parada, onde se desenvolvem em larvas</li>
+ <li>Embora o Aedes aegypti possa voar até alguns quilômetros, sua preferência é por voos curtos</li>
+ <li>As fêmeas do mosquito se alimentam de sangue para fornecer os nutrientes necessários para a produção de ovos.</li>
+ <li>O Aedes aegypti é conhecido como um vetor de várias doenças, incluindo dengue, febre amarela, zika e chikungunya</li>
+</ul>
+   </div>
+ </div>
+
+ <div class="collapse collapse-horizontal" id="collapseWidthExample2">
+   <div class="card card-body-lg" style="max-width: 600px; width: 600px;word-break: break-word;">
+<ol>
+ <li>Procure atendimento médico</li>
+ <li>Descanse e hidrate-se</li>
+ <li>Evite medicamentos à base de ácido acetilsalicílico</li>
+ <li>Siga as orientações médicas</li>
+ <li>Mantenha-se em repouso</li>
+ <li>Use roupas protetoras</li>
+ <li>Evite a proliferação do mosquito</li>
+ <li>Monitore os sintomas de piora</li>
+ <li>Mantenha-se hidratado</li>
+ <li>Informe seus contatos próximos</li>
+</ol>
+   </div>
+ </div>
+
+</div>
+
+<div style="min-height: 120px; overflow-x: visible;">
+ 
+</div>
+
+
+
+
+   </div>
+ </div>
+
+<!-- Hero Animal --> 
+<div class="col-sm-5">
+ <div class="image-container">
+   <img src="src/assets/img/animals/Dengue.jpg" alt="Imagem" class="img-fluid rounded-circle animal">
+ </div>
+</div>
+
+</div>
+
+<br>
+<!-- Comments -->
+       <h1>Você avistou um desses? Conte-nos!</h1>
+               <hr/>
+               
+               <div class="form-todo form-group">
+                   <p>
+                       <input type="text" name="author" placeholder="nome" class="form-control-lg" v-model="name">
+                   </p>
+                   <p>
+                       <textarea name="message" placeholder="comentário" class="form-control-lg" v-model="message"></textarea>
+                   </p>
+                   
+                   <button v-on:click="addComment" type="submit" class="btn btn-success" style="-webkit-box-shadow: 3px 3px 5px 5px #000000; box-shadow: 5px 5px 15px 5px #000000;">Comentar</button>
+               </div>
+               <br>
+               
+               <div class="list-group">
+                   <div class="list-group-item" v-for="(comment, index) in allComments">
+                       <span class="comment__author">Autor: <strong>{{ comment.name }}</strong></span>
+                       <p>{{ comment.message }}</p>
+                       <div>
+                           <p><a href="#" title="Excluir" v-on:click.prevent="deleteComment(index)">Excluir</a></p>
+                       </div>
+                   </div>
+               </div>
+               
+               <hr/>
+</div> `,
+        data() {
+            return {
+                comments: [],
+                name:'', message: '',
+            }
+        },
+        methods: {
+            addComment() {
+                if(this.message.trim() === ''){return;}
+                this.comments.push({name: this.name, message:this.message});
+                this.name ='';
+                this.message = '';
+            },
+
+            deleteComment(index) {this.comments.splice(index, 1)},
+            getImage() {return 'trip.jpg'}
+            
+        },
+        computed:{
+            allComments(){
+                return this.comments.map(comment => ({
+                  ...comment,
+                   name: comment.name.trim() === '' ? 'Anônimo' : comment.name
+                }))
+            }
+        },
+        watch:{
+            comments(val) {
+                console.log('val', val);
+            }
+        }
+    });
+</script>
+
+    </body>
+</html>
+

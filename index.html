@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  
+  <title>Avistei - Início</title>
+  <style>
+    body{
+      background-color: rgb(166, 194, 146);
+    }
+    .loading-bar {
+      width: 300px;
+      height: 20px;
+      background-color: #f1f1f1;
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 50px auto;
+    }
+
+    .progress {
+      width: 0;
+      height: 100%;
+      background-color: #0e3b10;
+      transition: width 0.5s ease-in-out;
+    }
+
+    /* Animação da barra de carregamento */
+    @keyframes loadingAnimation {
+      0% { width: 0; }
+      100% { width: 100%; }
+    }
+
+    /* Animação da imagem */
+    @keyframes exampleAnimation {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    img {
+      width: 200px;
+      height: auto;
+      animation: exampleAnimation 3s infinite;
+      margin-top: 50px;
+    }
+
+    .phrases {
+      margin-top: 30px;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+    }
+   </style>
+        <link rel="icon" type="image/png" href="src/assets/img/logo.png">
+</head>
+<body>
+  <center>
+    <img src="/src/assets/img/logo.png" alt="Imagem Predefinida">
+  </center>
+  <div class="loading-bar">
+    <div class="progress"></div>
+  </div>
+  <div class="phrases">
+    <span id="phrase"></span>
+  </div>
+
+  <script>
+    var phrases = ["Bem vindo(a) ao Projeto Avistei", "Carregando a página...", "Estamos prontos, valeu por aguardar!"];
+    var phraseElement = document.getElementById("phrase");
+    var phraseIndex = 0;
+
+    function changePhrase() {
+      phraseElement.textContent = phrases[phraseIndex];
+      phraseIndex = (phraseIndex + 1) % phrases.length;
+    }
+
+    // Simulando carregamento
+    setTimeout(function() {
+      var progressBar = document.querySelector('.progress');
+      progressBar.style.animation = 'loadingAnimation 10s linear forwards';
+
+      setInterval(changePhrase, 3000); // Muda a frase a cada 2 segundos
+
+      setTimeout(function() {
+        window.location.href = "about.html";
+      }, 8000);
+    }, 1000);
+  </script>
+</body>
+</html>

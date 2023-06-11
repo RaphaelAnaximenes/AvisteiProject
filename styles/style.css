@@ -1,0 +1,71 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #5fac88;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+  }
+  
+  nav .logo {
+    color: antiquewhite;
+    padding: 14px 16px;
+    max-width: 20%;
+  }
+  
+  nav a {
+    color: wheat;
+    display: inline-block;
+    padding: 14px 16px;
+    margin-right: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 26px;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.5s;
+    background-color: transparent; /* Set the initial background color to transparent */
+  }
+  
+  nav a:hover {
+    background-color: azure; /* Fill the background color on hover */
+    color: black;
+  }
+
+  
+
+  @media (max-width: 770px) {
+    .logo {
+      display: none;
+    }
+  }
+
+  @media (max-width: 600px) {
+   .logo {
+      display: none;
+    }
+
+    nav img{
+        display: none;
+    }
+    nav a {
+      color: black;
+    }
+  }
+
+.animal {
+    max-width: 100%;
+    height: auto;
+    border: 4px outset #6FA560;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;
+    margin-bottom: 5%;
+}
+
